@@ -11,7 +11,9 @@ public class LoggerFrameworkDemo {
 
         log.setLoggerConfig(new LogConfiguration(LogLevel.ERROR, new ConsoleDestination()));
         log.error("Printing an error log");
+        log.setLoggerConfig(new LogConfiguration(LogLevel.WARN, new FileDestination()));
 
+        log.warn("Fatal error occured");
         log.setLoggerConfig(new LogConfiguration(LogLevel.FATAL, new ConsoleDestination()));
         log.fatal("Fatal error occured");
     }

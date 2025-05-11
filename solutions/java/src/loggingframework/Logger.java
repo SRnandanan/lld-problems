@@ -39,7 +39,7 @@ public class Logger {
         log(LogLevel.INFO, message);
     }
 
-    public void warning(String message) {
+    public void warn(String message) {
         log(LogLevel.WARN, message);
     }
 

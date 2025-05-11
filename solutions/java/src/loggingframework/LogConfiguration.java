@@ -2,9 +2,9 @@ package loggingframework;
 
 public class LogConfiguration {
 
-    private LogLevel level;
+    private final LogLevel level;
 
-    private OutputDestination destination;
+    private final OutputDestination destination;
 
     public LogConfiguration(LogLevel level, OutputDestination destination) {
         this.level = level;
@@ -15,15 +15,7 @@ public class LogConfiguration {
         return level;
     }
 
-    public void setLevel(LogLevel level) {
-        this.level = level;
-    }
-
     public OutputDestination getDestination() {
         return destination;
-    }
-
-    public void setDestination(OutputDestination destination) {
-        this.destination = destination;
     }
 }

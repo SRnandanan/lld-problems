@@ -11,17 +11,6 @@ public class LogMessage {
         this.timestamp = System.currentTimeMillis();
     }
 
-    public long getTimestamp() {
-        return timestamp;
-    }
-
-    public LogLevel getLevel() {
-        return level;
-    }
-
-    public String getMessage() {
-        return message;
-    }
 
     @Override
     public String toString() {
